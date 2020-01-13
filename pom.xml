@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sunil.test</groupId>
-	<artifactId>test-new-project</artifactId>
+	<artifactId>spring-security-oAuth2-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>test-new-project</name>
 	<description>Demo project for Spring Boot</description>

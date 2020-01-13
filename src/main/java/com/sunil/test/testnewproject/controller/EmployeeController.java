@@ -56,7 +56,7 @@ public class EmployeeController {
 
 		HttpEntity<String> request = new HttpEntity<String>(headers);
 
-		String access_token_url = "http://localhost:8080/oauth/token";
+		String access_token_url = "http://localhost:8091/oauth/token";//@Server oAuth
 		access_token_url += "?code=" + code;
 		access_token_url += "&grant_type=authorization_code";
 		access_token_url += "&redirect_uri=http://localhost:8090/showEmployees";
@@ -72,7 +72,7 @@ public class EmployeeController {
 		JsonNode node = mapper.readTree(response.getBody());
 		String token = node.path("access_token").asText();
 
-		String url = "http://localhost:8080/user/getEmployeesList";
+		String url = "http://localhost:8091/user/getEmployeesList";//@Server 
 
 		// Use the access token for authentication
 		HttpHeaders headers1 = new HttpHeaders();
